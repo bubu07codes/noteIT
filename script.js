@@ -33,7 +33,7 @@ async function loadPosts() {
     ).join("");
 }
 
-async function addPost() {
+async function createPost() {
     let message = document.getElementById("message").value;
     await fetch(`${API_URL}/add-post`, {
         method: "POST",
